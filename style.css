@@ -1,0 +1,81 @@
+
+body {
+scroll-behavior: smooth;
+}
+footer {
+text-align: center;
+padding: 10px 0;
+background-color: #0080ff;
+}
+.custom-section {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding: 40px;
+background-color: #f8f9fa;
+}
+.text-section {
+flex: 1;
+padding-right: 20px;
+}
+.text-section h1 {
+font-size: 2.5rem;
+font-weight: bold;
+color: #333;
+margin: 0;
+}
+.image-section {
+flex: 1;
+text-align: center;
+}
+.image-section img {
+max-width: 100%;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+display: flex;
+justify-content: center; /* Tetap posisikan di tengah */
+gap: 10px; /* Atur jarak antar ikon */
+margin-top: 20px;
+width: auto; /* Pastikan tidak meluas */
+}
+
+.social-icons a {
+text-decoration: none;
+font-size: 30px; /* Atur ukuran ikon */
+color: #000; /* Warna ikon */
+display: flex;
+align-items: center; /* Selaraskan ikon secara vertikal */
+}
+
+.social-icons a:hover {
+color: #007bff; /* Warna saat hover */
+}
+
+.link footer {
+text-align: center;
+padding: 20px;
+background-color: #007bff;
+color: white;
+}
+@media (max-width: 768px) {
+.custom-section {
+flex-direction: column;
+}
+.text-section {
+padding-right: 0;
+margin-bottom: 20px;
+}
+.fade-in {
+opacity: 0;
+transform: translateY(20px);
+transition: all 0.5s ease-in-out;
+}
+.fade-in.show {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
